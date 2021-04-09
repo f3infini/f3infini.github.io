@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="Author" CONTENT="Find Future Factory">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="起業準備中！">
+<meta name="keywords" content="システム開発, 委託, パソコン, aws, java, フレームワーク, 尼崎">
+<title>Find Future Factory</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/f3.css">
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+$('a[href^="#"]').click(function() {
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+</head>
+<body>
+<header>
+	<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="Find Future Factory"></a></h1>
+	<nav id="menubar">
+		<a href="#service" class="menuBtn">Service</a>
+		<a href="#works" class="menuBtn">Works</a>
+		<a href="#about" class="menuBtn">About</a>
+		<a href="#new" class="menuBtn">What's New</a>
+		<a href="#contact" class="menuBtn">Contact</a>
+		<a href="https://f3it.blogspot.com/" class="menuBtn" target="_blank" rel="noopener noreferrer">Blog</a>
+	</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="service">
+	<h2>Service</h2>
+	<div class="title1" style="text-align:center; width:270px;"><strong>IT課題をワンストップで解決！</strong></div>
+	　Find Future Factory（F3）のホームページをご覧下さり、ありがとうございます。
+	<ul class="list1" type="circle" style="margin:0px 0px 0px 60px;">
+		<li>「IT、ITって言うけど、本当のとこ良くわかんないだよね」</li>
+		<li>「お金がかかるんでしょ、ウチには無理々」</li>
+		<li>「何か横文字多くて・・・」</li>
+	</ul>のような印象を多くの方が持たれていると思います。このような方々に、IT関連の仕事を通して得た知識や経験を活かし、お役に立ちたいと思っています。<br>
+	　一人で対応できる量としては大したことは無いかもしれませんが、様々な経験があります。フルスタックエンジニアとして企画・コンサル・設計・開発
+	全て取り組みますのでご相談下さい。<span class="marker1">利益よりもやり甲斐</span>、皆さんが満足して頂けることを目指しています。<br>
+	（何でも出来ます＝何も大したことは出来ない）と思われるかもしれませんが、最も得意な（やりたい）ことはズバリ開発です。インフラ・ネットワークも
+	可能ですが、あまり興味が持てません。<br>
+	　製造業情報システム部門で３０数年間ITに関わって来ました。ITを専業とする会社やSIerではありませんでしたが、利用者側としての目利きだけでなく、提供する側の
+	ITエンジニアとしてのスキルも磨いて来ました。当サイト内の<a href="#works">Works</a>を是非ご覧頂き、相談等ございましたら、<a href="#contact">こちら</a>
+	からお気軽にご連絡ください！
+</section>
+<!--/#service-->
+
+<section id="works">
+	<h2>Works</h2>
+	　過去に手掛けた代表的な事例です。(画像はクリックで拡大できます。一部提案ベースのPDFも抜粋しておりますのでご覧ください。)<br>
+	　システム構築の流れもオンプレからAWSへ変わってきているのでAWSの事例を中心にあげていますが、JavaEE、バッチ・スクリプト系も対応可能です。
+	ここにはあげてありませんが、c++/VB/Delphiと言ったツールでのクラサバ開発の経験も豊富です。
+	<div class="list">
+		<table>
+		<caption class="worksCap"><h4>１　オンプレのDMZをAWSに移行</h4></caption>
+		<tr>
+			<td class="worksTdImg">
+				<a href="resource/works/work1.png" target="_blank"><img src="resource/works/work1.png" alt="" class="workImg"></a>
+			</td>
+			<td colspan="2" class="worksTdSummary">
+			　社外のユーザーとファイルで連携する場合、DMZを介した(S)FTPを利用するケースが多いと思います。また社内システムを社内と社外で共有する
+			ケースがあります。一般的にオンプレでDMZを構築するとファイヤーウォール、ネットワーク設定等インフラ部門の協力や調整が欠かせません。また、
+			ある程度の機能を備えたハードウェアも必要になり、運用も含めコストも高額、長納期になりがちです。しかし、AWSのサービスを組み合わせれば、
+			同等のことが短納期で可能です。<br>
+			　本番稼働させるには、実際のファイヤーウォールのポリシー設定、テスト等も必要になりますが、この環境の構築自体は10時間もかからず出来ました。
+			</td>
+		</tr>
+		</table>
+	</div>
+	<div class="list">
+		<table>
+		<caption class="worksCap"><h4>２　Webとメールを使った応募サイト</h4></caption>
+		<tr>
+			<td rowspan="5" class="worksTdImg">
+				<a href="resource/works/work2.png" target="_blank"><img src="resource/works/work2.png" alt="" class="workImg"></a>
+			</td>
+			<td colspan="2" class="worksTdSummary">
+			　Web上に採用募集ページを公開することまではできていましたが、その後はメールベースでのやり取り、履歴書・応募書類の郵送など書類を介した
+			マニュアル対応にとどまっていた採用業務をAWSのサーバレス環境で実現しました。主に以下の機能を実装しました。
+			</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">1</td>
+			<td class="worksTdDetail">応募者は募集ページからメールアドレスのみでエントリ</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">2</td>
+			<td class="worksTdDetail">応募者専用ページを自動生成後、ワンタイムURLを送信</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">3</td>
+			<td class="worksTdDetail">2の応募ページから身上・歴等必要情報を入力し送信</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">4</td>
+			<td class="worksTdDetail">3の送信されたHTMLページをPDF変換し、社内の採用システムに連携</td>
+		</tr>
+		</table>
+	</div>
+	<div class="list">
+		<table>
+		<caption class="worksCap"><h4>３　署名付きURLでセキュリティを確保したファイル共有サイト</h4></caption>
+		<tr>
+			<td rowspan="3" class="worksTdImg">
+				<a href="resource/works/work3.png" target="_blank"><img src="resource/works/work3.png" alt="" class="workImg"></a>
+				<a href="resource/works/work3.pdf" target="_blank"><img src="images/pdf_24.png" alt="">PDFはこちら</a>
+			</td>
+			<td colspan="2" class="worksTdSummary">
+			　ファイル共有というよりHTTPSベースのファイル交換サイトです。1のDMZ上で運用するFTPサイトをWebで実現した形となります。詳細はPDFで
+				ご覧になっていただけますが、以下の機能を実装しました。<br>
+				　※ ユーザーがWindowsでしたのでPowerShellで提供せざるを得ず、配列処理系がかなり面倒でした。
+			</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">1</td>
+			<td class="worksTdDetail">クライアントはブラウザでファイルのダウンロード/アップロード、ファイルに対する簡単なチャット</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">2</td>
+			<td class="worksTdDetail">クライアントがシステムの場合はバッチ等からjQueryのajax通信、curlコマンドによる直接Web-APIへの連携</td>
+		</tr>
+		</table>
+	</div>
+	<div class="list">
+		<table>
+		<caption class="worksCap"><h4>４　顔認証</h4></caption>
+		<tr>
+			<td rowspan="4" class="worksTdImg">
+				<a href="resource/works/work4.png" target="_blank"><img src="resource/works/work4.png" alt="" class="workImg"></a>
+				<a href="resource/works/work4.pdf" target="_blank"><img src="images/pdf_24.png" alt="">PDFはこちら</a>
+			</td>
+			<td colspan="2" class="worksTdSummary">
+			　Rekognition顔認識の機能を応用し、キー操作が出来ない場合(製造現場で保護具等を付けた状態等)にログインするための仕組みです。>
+			サインインした後はスマートグラス・音声等でシステムを操作します。<br>
+			　顔認識ですので認証レベルのクリティカルな業務には適しませんが、セキュリティがある程度許容されるケースでは十分な認証を行うことが出来ました。
+			認証レベルまで上げるには何らかの2要素認証や、音声・ゼスチュア等を組み合わせる工夫が必要になりますね。
+			</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">1</td>
+			<td class="worksTdDetail">サインアップ・アクティベーション</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">2</td>
+			<td class="worksTdDetail">マイページでの画像登録(PCカメラと画像の1対1比較)、個人情報管理</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">3</td>
+			<td class="worksTdDetail">サインイン(PCカメラと画像グループの1対N比較)、ベアラートークンによる認証</td>
+		</tr>
+		</table>
+	</div>
+	<div class="list">
+		<table>
+		<caption class="worksCap"><h4>５　予算枠の消込サイト</h4></caption>
+		<tr>
+			<td rowspan="5" class="worksTdImg">
+				<a href="resource/works/work5.png" target="_blank"><img src="resource/works/work5.png" alt="" class="workImg"></a>
+			</td>
+			<td colspan="2" class="worksTdSummary">
+			　機能的にはよくある残高を消し込む仕組みです。この例では稟議決裁枠を複数の支払案件で消し込み、決済枠を超えないように管理する機能を実現しました。
+			こちらでは技術的な面について補足します。
+			</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">1</td>
+			<td class="worksTdDetail">サーバープラットフォーム<br>　Linux, Java(OpenJDK), WildFly, MySQL, その他(Spring, iText・・・)</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">2</td>
+			<td class="worksTdDetail">クライアント<br>　ブラウザ, JavaScript, その他(ext.js, DWR・・・)</td>
+		</tr>
+		<tr>
+			<td class="worksTdNo">3</td>
+			<td class="worksTdDetail">開発環境<br>　eclipse
+		</tr>
+		<tr>
+			<td colspan="2" class="worksTdSummary">
+				　当時はjQueryの機能が今一つでしたのでext.jsを利用したのですが、その後ライセンスや方向性等少し(？)の部分が目立つようになり、以後jQueryです。ライブラリ選択は
+				注意が必要ですね。SPAを作りたかったのでDWR(Direct Web Remoting)を採用しましたが、JavaにこだわらずJavaScript(node)で十分だったかもしれません。
+			</td>
+		</tr>
+		</table>
+	</div>
+	<div class="list">
+		<table>
+		<caption class="worksCap"><h4>６　ファイル変換スクリプト</h4></caption>
+		<tr>
+			<td class="worksTdImg">
+				<a href="resource/works/work6.png" target="_blank"><img src="resource/works/work6.png" alt="" class="workImg"></a>
+			</td>
+			<td colspan="2" class="worksTdSummary">
+			　様々な条件でテキストファイルの編集が必要なケースがあります。汎用的に作っても、条件が多くなるとプログラム自体が複雑になり、
+			個別に作った方がメンテナンスも楽になる場合が多いです。相当なボリュームのファイルでない限り、コンパイル不要なスクリプト系の方が
+			便利な事も多いです。<br>
+			　RDBインポート→SQL処理→テキストファイルエクスポートのパターンもあると思いますが、メインフレーム（コボルが多いです）から出力された固定長ファイルの場合、
+			ヘッダー/フッターや複雑なレコード区分等があるためファイル処理の方が良い場合もあります。JSONのような構造化テキストでは、便利なライブラリが多いのでファイル
+			処理の方が便利と思います。
+			</td>
+		</tr>
+		</table>
+	</div>
+</section>
+<!--/#works-->
+
+<section id="about">
+	<h2>About</h2>
+	<h3>会社概要</h3>
+	<table class="ta1">
+		<tr><th>社名</th><td>Find Future Factory（ファインド・フューチャー・ファクトリー）</td></tr>
+		<tr><tr><th>事業主名</th><td>福岡達也（フクオカ　タツヤ）</td></tr>
+		<tr><th>事業形態</th><td>フリーランス、個人事業主 (SOHO)</td></tr>
+		<tr><th>電話</th><td>06-6481-0570</td></tr>
+		<tr><th>所在地</th><td>兵庫県尼崎市　※自宅のため、詳細はお問い合わせの際にお知らせいたします。</td></tr>
+		<th>Eメール</th><td>f3infini@gmail.com</td></tr><tr>
+		<th>ホームページ</th><td>https://</td></tr>
+		<tr>
+			<th>事業内容</th>
+			<td>システムコンサルティング<br>AWSを利用したサーバレスWEBアプリケーション開発<br>JavaEEアプリケーション開発</td>
+		</tr>
+		<tr><th>会社設立</th><td>2021年1月1日</td></tr>
+	</table>
+</section>
+<!--/#company-->
+
+
+<section id="new">
+	<h2>What's New</h2>
+	<dl>
+		<dt>2022/01/01</dt>
+		<dd>開業</dd>
+		<dt>2022/01/07</dt>
+		<dd>ブログを更新しました。</dd>
+	</dl>
+</section>
+<!--/#new-->
+
+<section id="contact">
+	<h2>Contact</h2>
+	<p class="c">お問い合わせ等につきましては、お電話または電子メールにて受付ております。<br>どうぞお気軽にお問合せ下さい。</p>
+	<div align="center">
+		Find Future Factory（ファインド・フューチャー・ファクトリー）<br>
+		<img src="images/contact.png" alt="">
+	</div>
+</section>
+<!--/#contact-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Find Future Factory</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+</body>
+</html>
